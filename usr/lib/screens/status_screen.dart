@@ -88,7 +88,7 @@ class StatusScreen extends StatelessWidget {
           ),
         ),
         const Divider(height: 1),
-        if (recentStatuses.isNotEmpty) ..[
+        if (recentStatuses.isNotEmpty) ...<Widget>[
           Padding(
             padding: const EdgeInsets.all(16.0),
             child: Text(
@@ -102,7 +102,7 @@ class StatusScreen extends StatelessWidget {
           ),
           ...recentStatuses.map((status) => _buildStatusItem(status)),
         ],
-        if (viewedStatuses.isNotEmpty) ..[
+        if (viewedStatuses.isNotEmpty) ...<Widget>[
           Padding(
             padding: const EdgeInsets.all(16.0),
             child: Text(

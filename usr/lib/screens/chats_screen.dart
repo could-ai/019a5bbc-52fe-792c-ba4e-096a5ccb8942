@@ -130,7 +130,7 @@ class ChatsScreen extends StatelessWidget {
                             : Colors.grey[600],
                       ),
                     ),
-                    if (chat.unreadCount > 0) ..[
+                    if (chat.unreadCount > 0) ...<Widget>[
                       const SizedBox(height: 4),
                       Container(
                         padding: const EdgeInsets.all(6),

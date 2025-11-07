@@ -204,7 +204,7 @@ class _ChatDetailScreenState extends State<ChatDetailScreen> {
                     color: Colors.grey[600],
                   ),
                 ),
-                if (message.isSentByMe) ..[
+                if (message.isSentByMe) ...<Widget>[
                   const SizedBox(width: 4),
                   Icon(
                     Icons.done_all,
